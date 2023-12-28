@@ -1,14 +1,14 @@
 require(["jquery"], function ($) {
 
-    let sustainabilityCollection = $('.js-sustainability-collection');
+    let clixCollection = $('.js-clix-collection');
 
-    if (sustainabilityCollection.length > 0) {
+    if (clixCollection.length > 0) {
         require([
             'splider'
         ], function () {
-            let sustainabilityCollectionCms = sustainabilityCollection.find('.twins-widget');
+            let clixCollectionCms = clixCollection.find('.twins-widget');
 
-            sustainabilityCollectionCms.splider({
+            clixCollectionCms.splider({
                 default: {
                     type: 'slide',
                     pagination: false,
