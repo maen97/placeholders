@@ -1,0 +1,25 @@
+<div id="sustainability" class="hidden">Zegna Sustainability</div>
+<style>
+    .page-title-wrapper {
+        display: none;
+    }
+</style>
+<script>
+    require([
+        'jquery'
+    ], function ($) {
+        if ($('body').hasClass('cms-sustainability')) {
+            $("body")
+                .parents(".page-wrapper")
+                .find(".page-title-wrapper")
+                .addClass("hidden");
+        }
+    });
+</script>
+<script type="text/x-magento-init">
+        {
+            "#sustainability": {
+                "sustainability": {}
+            }
+        }
+</script>
